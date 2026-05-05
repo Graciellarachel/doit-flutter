@@ -17,7 +17,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFF6B00)),
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      // diCenterin + SizedBox diatur biar tampilannya kayak ukuran HP
+      home: Center(
+        child: SizedBox(
+          width: 390, // lebar iPhone
+          height: 844, // tinggi iPhone
+          child: ClipRect(child: const LoginScreen()),
+        ),
+      ),
     );
   }
 }
