@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
             width: 390, // lebar HP
             height: 844, // tinggi HP
             // ClipRect biar konten ga keluar dari kotak HP
-            child: ClipRect(child: const LoginScreen()),
+            child: ClipRect(child: LoginScreen()),
           ),
         ),
 
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
           child: SizedBox(
             width: 390,
             height: 844,
-            child: ClipRect(child: const ForgotPasswordScreen()),
+            child: ClipRect(child: ForgotPasswordScreen()),
           ),
         ),
 
@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
           child: SizedBox(
             width: 390,
             height: 844,
-            child: ClipRect(child: const DashboardScreen()),
+            child: ClipRect(child: DashboardScreen()),
           ),
         ),
       },
