@@ -3,11 +3,13 @@
 // tugasnya: daftarin semua halaman dan jalanin app
 
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart'; // import halaman login
-import 'screens/forgot_password_screen.dart'; // import halaman lupa password
+import 'screens/login_screen.dart'; // halaman login
+import 'screens/forgot_password_screen.dart'; // halaman lupa password
+import 'screens/dashboard_screen.dart'; // halaman dashboard
 
 void main() {
-  runApp(const MyApp()); // jalanin app
+  // runApp = jalanin app, MyApp adalah widget utamanya
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -28,26 +30,37 @@ class MyApp extends StatelessWidget {
       // halaman pertama yang muncul waktu app dibuka
       initialRoute: '/',
 
-      // daftar semua halaman — kayak daftar isi buku
-      // '/' = login, '/forgot-password' = lupa password
+      // routes = daftar semua halaman di app
+      // kayak daftar isi buku — '/' login, '/forgot-password' lupa password, dll
       routes: {
-        // halaman login
-        // dibungkus Center + SizedBox biar tampilannya kayak ukuran HP
+        // halaman login — halaman pertama
         '/': (context) => Center(
           child: SizedBox(
-            width: 390, // lebar iPhone
-            height: 844, // tinggi iPhone
+            width: 390, // lebar HP
+            height: 844, // tinggi HP
+            // ClipRect biar konten ga keluar dari kotak HP
             child: ClipRect(child: const LoginScreen()),
           ),
         ),
 
         // halaman lupa password
-        // sama kayak login, dibungkus biar ukurannya HP juga
+        // muncul waktu user klik "Lupa Password?" di login
         '/forgot-password': (context) => Center(
           child: SizedBox(
             width: 390,
             height: 844,
             child: ClipRect(child: const ForgotPasswordScreen()),
+          ),
+        ),
+
+        // halaman dashboard
+        // muncul waktu login berhasil
+        // nama 'Grace' dikirim dari login screen lewat arguments
+        '/dashboard': (context) => Center(
+          child: SizedBox(
+            width: 390,
+            height: 844,
+            child: ClipRect(child: const DashboardScreen()),
           ),
         ),
       },
