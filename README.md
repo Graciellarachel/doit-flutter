@@ -63,11 +63,11 @@ lib/
 
 
 ## Screenshot
-Login : (screenshots/login.png) 
+Login : HalamanLogin.png
 
-Forgot Pasword : (screenshots/forgot.png)
+Forgot Pasword : HalamanForgetPassword.png
 
-Dashboar : (screenshots/dashboard.png) 
+Dashboar : HalamanDashboard.png 
 
 
 ## Info
