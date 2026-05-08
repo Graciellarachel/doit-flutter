@@ -6,7 +6,7 @@ App to-do list buat mahasiswa yang suka lupa tugas. Dibuat pake Flutter buat uji
 
 ## Cerita Singkat
 
-Jadi idenya simpel — daripada nulis tugas di notes HP yang berantakan, mending bikin app sendiri sekalian buat nilai praktikum 😄. Isinya ada halaman login, lupa password, sama dashboard yang nampilin daftar tugas.
+Jadi idenya simpel daripada nulis tugas di notes HP yang berantakan, mending bikin app sendiri sekalian buat nilai praktikum 😄. Isinya ada halaman login, lupa password, sama dashboard yang nampilin daftar tugas.
 
 
 
